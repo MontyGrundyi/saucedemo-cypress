@@ -1,0 +1,472 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-07-08T11:33:24.718Z",
+    "end": "2025-07-08T11:34:02.916Z",
+    "duration": 38198
+  },
+  "results": [
+    {
+      "uuid": "c852a728-005e-4d68-8078-ee76029c0b18",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkOut.cy.js",
+      "file": "cypress\\e2e\\checkOut.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0db3f97c-f039-484a-84fb-dd0cbd0a8772",
+          "title": "Assert cart page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to add item to cart with standard user",
+              "fullTitle": "Assert cart page Should be able to add item to cart with standard user",
+              "timedOut": null,
+              "duration": 1621,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.enterUserName(\"standard_user\");\n_LoginPage.default.enterPassword(\"secret_sauce\");\n_LoginPage.default.clickLoginButton();\n_InventoryPage.default.assertTitle();\n_InventoryPage.default.addItemToCart();\n_InventoryPage.default.assertItemAddedToCart();\n_InventoryPage.default.clickOnCart();\n_CartPage.default.assertCheckoutPageTitle();\n_CartPage.default.assertCartItemName();\n_CartPage.default.assertCartItemPrice();\n_CartPage.default.checkOut();",
+              "err": {},
+              "uuid": "37a5b0cc-7144-427b-b631-22d2ae7e1e6c",
+              "parentUUID": "0db3f97c-f039-484a-84fb-dd0cbd0a8772",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "37a5b0cc-7144-427b-b631-22d2ae7e1e6c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1621,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b41d225f-388f-47bf-9150-ac87adda4a1d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkOutComplete.cy.js",
+      "file": "cypress\\e2e\\checkOutComplete.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "54cdb7ab-6b4d-4490-9ef1-a5cc1bdca3ce",
+          "title": "Assert cart page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to add item to cart with standard user",
+              "fullTitle": "Assert cart page Should be able to add item to cart with standard user",
+              "timedOut": null,
+              "duration": 2379,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.enterUserName(\"standard_user\");\n_LoginPage.default.enterPassword(\"secret_sauce\");\n_LoginPage.default.clickLoginButton();\n_InventoryPage.default.assertTitle();\n_InventoryPage.default.addItemToCart();\n_InventoryPage.default.assertItemAddedToCart();\n_InventoryPage.default.clickOnCart();\n_CartPage.default.assertCheckoutPageTitle();\n_CartPage.default.assertCartItemName();\n_CartPage.default.assertCartItemPrice();\n_CartPage.default.checkOut();\n_checkOutPage.default.assertPageTitle();\n_checkOutPage.default.enterCustomerInfo(\"test\", \"test\", \"00100\");\n_checkOutPage.default.clickContinueBtn();\n_CheckoutOverviewPage.default.assertPriceTotal();\n_CheckoutOverviewPage.default.clickFinishBtn();\n_CheckOutCompletePage.default.assertThankYouMessage();\n_CheckOutCompletePage.default.clickReturnToProductsBtn();\n_InventoryPage.default.assertTitle();",
+              "err": {},
+              "uuid": "7e040001-0c45-4714-b4cc-64a06fcb78e0",
+              "parentUUID": "54cdb7ab-6b4d-4490-9ef1-a5cc1bdca3ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e040001-0c45-4714-b4cc-64a06fcb78e0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2379,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "82ebfdc3-9769-4224-b728-83b0bf3343d9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkoutInfo.cy.js",
+      "file": "cypress\\e2e\\checkoutInfo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a26824c6-e74d-489e-9b00-b0dd38adbd23",
+          "title": "Assert cart page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to add item to cart with standard user",
+              "fullTitle": "Assert cart page Should be able to add item to cart with standard user",
+              "timedOut": null,
+              "duration": 2165,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.enterUserName(\"standard_user\");\n_LoginPage.default.enterPassword(\"secret_sauce\");\n_LoginPage.default.clickLoginButton();\n_InventoryPage.default.assertTitle();\n_InventoryPage.default.addItemToCart();\n_InventoryPage.default.assertItemAddedToCart();\n_InventoryPage.default.clickOnCart();\n_CartPage.default.assertCheckoutPageTitle();\n_CartPage.default.assertCartItemName();\n_CartPage.default.assertCartItemPrice();\n_CartPage.default.checkOut();\n_checkOutPage.default.assertPageTitle();\n_checkOutPage.default.enterCustomerInfo(\"Polyn\", \"Njogu\", \"00100\");\n_checkOutPage.default.clickContinueBtn();",
+              "err": {},
+              "uuid": "453f4d2b-69c3-4159-ba99-3fbe6299a424",
+              "parentUUID": "a26824c6-e74d-489e-9b00-b0dd38adbd23",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "453f4d2b-69c3-4159-ba99-3fbe6299a424"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2165,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "98673b94-2b7d-4e14-bfb6-e87c11371a12",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkoutOverview.cy.js",
+      "file": "cypress\\e2e\\checkoutOverview.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2e991803-ea41-420d-8335-3d3964934bec",
+          "title": "Assert cart page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to add item to cart with standard user",
+              "fullTitle": "Assert cart page Should be able to add item to cart with standard user",
+              "timedOut": null,
+              "duration": 2176,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.enterUserName(\"standard_user\");\n_LoginPage.default.enterPassword(\"secret_sauce\");\n_LoginPage.default.clickLoginButton();\n_InventoryPage.default.assertTitle();\n_InventoryPage.default.addItemToCart();\n_InventoryPage.default.assertItemAddedToCart();\n_InventoryPage.default.clickOnCart();\n_CartPage.default.assertCheckoutPageTitle();\n_CartPage.default.assertCartItemName();\n_CartPage.default.assertCartItemPrice();\n_CartPage.default.checkOut();\n_checkOutPage.default.assertPageTitle();\n_checkOutPage.default.enterCustomerInfo(\"test\", \"test\", \"00100\");\n_checkOutPage.default.clickContinueBtn();\n_CheckoutOverviewPage.default.assertPriceTotal();\n_CheckoutOverviewPage.default.clickFinishBtn();",
+              "err": {},
+              "uuid": "872b4b65-78e5-4a27-a13d-ca8533039f9f",
+              "parentUUID": "2e991803-ea41-420d-8335-3d3964934bec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "872b4b65-78e5-4a27-a13d-ca8533039f9f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2176,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a35df73f-698e-454c-bb9e-d94d9cf1b7ad",
+      "title": "",
+      "fullFile": "cypress\\e2e\\inventory.cy.js",
+      "file": "cypress\\e2e\\inventory.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3a959000-a59c-4d55-b1da-8286220c9678",
+          "title": "Add items to cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to add item to cart with standard user",
+              "fullTitle": "Add items to cart Should be able to add item to cart with standard user",
+              "timedOut": null,
+              "duration": 1358,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.enterUserName(\"standard_user\");\n_LoginPage.default.enterPassword(\"secret_sauce\");\n_LoginPage.default.clickLoginButton();\n_InventoryPage.default.assertTitle();\n_InventoryPage.default.addItemToCart();\n_InventoryPage.default.assertItemAddedToCart();\n_InventoryPage.default.clickOnCart();",
+              "err": {},
+              "uuid": "18eb0d32-c08f-4364-907e-50708475877f",
+              "parentUUID": "3a959000-a59c-4d55-b1da-8286220c9678",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "18eb0d32-c08f-4364-907e-50708475877f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1358,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8f5ba237-fdbf-4b48-904b-e5813e2bb027",
+      "title": "",
+      "fullFile": "cypress\\e2e\\🔹 login.cy.js",
+      "file": "cypress\\e2e\\🔹 login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b4a647fd-a097-4ea6-93d1-24e461c3fe09",
+          "title": "Login Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should log in successfully with standard user",
+              "fullTitle": "Login Tests Should log in successfully with standard user",
+              "timedOut": null,
+              "duration": 1360,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Swag Labs\");\n_LoginPage.default.enterUserName(\"standard_user\");\n_LoginPage.default.enterPassword(\"secret_sauce\");\n_LoginPage.default.clickLoginButton();",
+              "err": {},
+              "uuid": "2786fd02-253e-497b-a909-015a3f7eb8a5",
+              "parentUUID": "b4a647fd-a097-4ea6-93d1-24e461c3fe09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should show error for invalid login",
+              "fullTitle": "Login Tests Should show error for invalid login",
+              "timedOut": null,
+              "duration": 944,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Swag Labs\");\n_LoginPage.default.enterUserName(\"error_user\");\n_LoginPage.default.enterPassword(\"erruser\");\n_LoginPage.default.clickLoginButton();\n_LoginPage.default.assertErrorMessage();",
+              "err": {},
+              "uuid": "2373c274-fcf3-4bcd-9b41-a7af8558cc2b",
+              "parentUUID": "b4a647fd-a097-4ea6-93d1-24e461c3fe09",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2786fd02-253e-497b-a909-015a3f7eb8a5",
+            "2373c274-fcf3-4bcd-9b41-a7af8558cc2b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2304,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a5050a63-caa1-41a8-b9b6-92bc370fed59",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cart.cy.js",
+      "file": "cypress\\e2e\\cart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "007b2089-d119-42d4-a3c7-26d1567d8525",
+          "title": "Assert cart page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to add item to cart with standard user",
+              "fullTitle": "Assert cart page Should be able to add item to cart with standard user",
+              "timedOut": null,
+              "duration": 2943,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.enterUserName(\"standard_user\");\n_LoginPage.default.enterPassword(\"secret_sauce\");\n_LoginPage.default.clickLoginButton();\n_InventoryPage.default.assertTitle();\n_InventoryPage.default.addItemToCart();\n_InventoryPage.default.assertItemAddedToCart();\n_InventoryPage.default.clickOnCart();\n_CartPage.default.assertCheckoutPageTitle();\n_CartPage.default.assertCartItemName();\n_CartPage.default.assertCartItemPrice();\n_CartPage.default.checkOut();",
+              "err": {},
+              "uuid": "52ddf71c-4814-4d1e-a302-2fc07aab700b",
+              "parentUUID": "007b2089-d119-42d4-a3c7-26d1567d8525",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "52ddf71c-4814-4d1e-a302-2fc07aab700b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2943,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
